@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            border: none;
+            padding: 20px;
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+
+        button:focus-visible {
+            outline: none;
+        }
+
+        div {
+            background-color: pink;
+            margin-bottom: 10px;
+        }
+
+        .center {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .left {
+            text-align: left;
+            font-size: 32px;
+        }
+
+        .left .old-price {
+            text-decoration: dashed;
+            color: #666;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .container .center {
+            color: red;
+        }
+
+        .container > .center {
+            color: blue;
+        }
+
+        .container > .center + .center {
+            color: chocolate;
+        }
+
+        .container .wrapper .center {
+            color: green;
+        }
+
+        a {
+            text-decoration: dashed;
+        }
+        
+        p{
+            margin: 0;
+        }
+
+        p + p{
+            margin-top: 20px;
+        }
+
+        .option1#option2{
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <button>submit</button>
+    <div class="center">center</div>
+    <div class="center">center</div>
+    <div class="left">
+        <span class="old-price">20.00</span>
+        <span>19.00</span>
+    </div>
+    <div class="right">right</div>
+
+    <div class="container">
+        <div id="option2" class="center option1">center</div>
+        <div class="center option2">abc</div>
+        <div class="option1 option2">xyz</div>
+        <p class="option1 option2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo, at beatae id aperiam doloribus saepe accusantium similique esse. Possimus quam soluta eum dolorum explicabo qui fugit voluptates temporibus quas.
+        </p>
+        <div class="wrapper">
+            <div class="center">
+                center
+            </div>
+            <a href="#">abc</a>
+        </div>
+        <div class="center">center</div>
+    </div>
+
+    <div class="sibling">
+        <p>abc</p>
+        <p>bcd</p>
+        <p>def</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid #000; 
+        }
+        .avatar{
+            width: 36px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .avatar img{
+            width: 100%;
+            /* object-fit: cover; */
+        }
+        .infor-right{
+            width: 80%;
+            display: inline-block;
+        }
+        .user-name{
+            margin-bottom: 6px;
+        }
+        .reaction-item{
+            width: 33.32%;
+            text-align: center;
+            padding: 12px 0;
+            border: 1px solid #ccc;
+        }
+        .reactions{
+            width: 100%;
+        }
+        input{
+            width: 100%;
+            border: solid 1px #000;
+            border-radius: 5px;
+            height: 100%;
+        }
+        .comment-box{
+            width: 100%;
+            position: relative;
+        }
+        .comment-box .infor-right{
+            position: absolute;
+            right: 0;
+            top: 0; 
+            width: 85%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post-info">
+            <div class="avatar">
+                <img src="meme-meo-bua-khoc-nhe.jpg" alt="">
+            </div>
+            <div class="infor-right">
+                <div class="user-name">John Doe</div>
+                <div class="time">12:00</div>
+            </div>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+        </div>
+        <div class="image">
+            <img src="meme-meo-bua-khoc-nhe.jpg" alt="">
+        </div>
+        <table class="reactions">
+            <tr>
+                <td class="reaction-item">Thích</td>
+                <td class="reaction-item">Bình luận</td>
+                <td class="reaction-item">Chia sẻ</td>
+            </tr>
+        </table>
+        <div class="post-info comment-box">
+            <div class="avatar">
+                <img src="meme-meo-bua-khoc-nhe.jpg" alt="">
+            </div>
+            <div class="infor-right">
+                <input type="text" placeholder="Nhập bình luận...">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
